@@ -62,6 +62,51 @@ foreach ($line in $lines) {
     }
 }
 
+# Add non-polynomial graphing test cases
+# Linear function: y = 2x + 3
+$output = & $calc "table(2*x + 3, x, -2, 2, 1)"
+$result = Get-CalcResult $output
+$lines = $result -split "`n"
+$csvPathLinear = Join-Path $env:TEMP "linear_graph.csv"
+foreach ($line in $lines) {
+    if ($line.Trim()) {
+        $line | Out-File -Encoding ascii -FilePath $csvPathLinear -Append
+    }
+}
+
+# Exponential function: y = e^x
+$output = & $calc "table(exp(x), x, -2, 2, 1)"
+$result = Get-CalcResult $output
+$lines = $result -split "`n"
+$csvPathExponential = Join-Path $env:TEMP "exponential_graph.csv"
+foreach ($line in $lines) {
+    if ($line.Trim()) {
+        $line | Out-File -Encoding ascii -FilePath $csvPathExponential -Append
+    }
+}
+
+# Logarithmic function: y = log(x)
+$output = & $calc "table(log(x), x, 1, 10, 1)"
+$result = Get-CalcResult $output
+$lines = $result -split "`n"
+$csvPathLogarithmic = Join-Path $env:TEMP "logarithmic_graph.csv"
+foreach ($line in $lines) {
+    if ($line.Trim()) {
+        $line | Out-File -Encoding ascii -FilePath $csvPathLogarithmic -Append
+    }
+}
+
+# Trigonometric function: y = sin(x)
+$output = & $calc "table(sin(x), x, -pi, pi, pi/4)"
+$result = Get-CalcResult $output
+$lines = $result -split "`n"
+$csvPathTrigonometric = Join-Path $env:TEMP "trigonometric_graph.csv"
+foreach ($line in $lines) {
+    if ($line.Trim()) {
+        $line | Out-File -Encoding ascii -FilePath $csvPathTrigonometric -Append
+    }
+}
+
 # Check for python, install if missing
 if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
     Write-Host "Python not found. Attempting to install via winget..."

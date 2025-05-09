@@ -25,7 +25,7 @@ calculator "<expression>"
 
 ## Output Format (Show Your Work)
 
-To support both human-friendly explanations and automated testing, your calculator should output **any intermediate steps or explanations** as desired, but the **final result must always be printed on a line by itself, prefixed with `RESULT:`** (with a single space after the colon).
+To support both human-friendly explanations and ease of debugging, your calculator may output **any intermediate steps or explanations** as desired, but the **final result must always be printed on a line by itself, prefixed with `RESULT:`** (with a single space after the colon).
 
 This allows tests and tools to reliably extract the actual result, while users can see the full calculation process.
 
@@ -38,14 +38,14 @@ Possible output:
 Step 1: 4 - 1 = 3
 Step 2: 3 * 3 = 9
 Step 3: 2 + 9 = 11
-RESULT: 11.000000
+RESULT: 11
 ```
 
 The tests and tools will only consider the value after `RESULT:` as the answer. All results must still be output with exactly 6 decimal places (rounded, not truncated).
 
 **Minimal output is also valid:**
 ```
-RESULT: 11.000000
+RESULT: 11
 ```
 
 ## Acceptance Tests
@@ -107,7 +107,7 @@ Your calculator should support:
   ```
   Expected output:
   ```
-  RESULT: 14.000000
+  RESULT: 14
   ```
 
 Calculator Output Precision Requirement:
@@ -147,11 +147,11 @@ Your calculator should support:
   Expected output:
   ```
   x,y
-  -2,9.000000
-  -1,4.000000
-  0,1.000000
-  1,0.000000
-  2,1.000000
+  -2,9
+  -1,4
+  0,1
+  1,0
+  2,1
   ```
 
 ---

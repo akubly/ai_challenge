@@ -90,6 +90,49 @@ if ($result -ne "1") {
     exit 1
 }
 
+# Trigonometric function tests
+$output = & $calc "sin(0)"
+$result = Get-CalcResult $output
+if ($result -ne "0") {
+    Write-Host "FAIL: Expected 0, got $result (sin(0))"
+    exit 1
+}
+
+$output = & $calc "cos(0)"
+$result = Get-CalcResult $output
+if ($result -ne "1") {
+    Write-Host "FAIL: Expected 1, got $result (cos(0))"
+    exit 1
+}
+
+$output = & $calc "tan(0)"
+$result = Get-CalcResult $output
+if ($result -ne "0") {
+    Write-Host "FAIL: Expected 0, got $result (tan(0))"
+    exit 1
+}
+
+$output = & $calc "sin(1)"
+$result = Get-CalcResult $output
+if ($result -ne "0.841471") {
+    Write-Host "FAIL: Expected 0.841471, got $result (sin(1))"
+    exit 1
+}
+
+$output = & $calc "cos(1)"
+$result = Get-CalcResult $output
+if ($result -ne "0.540302") {
+    Write-Host "FAIL: Expected 0.540302, got $result (cos(1))"
+    exit 1
+}
+
+$output = & $calc "tan(1)"
+$result = Get-CalcResult $output
+if ($result -ne "1.557408") {
+    Write-Host "FAIL: Expected 1.557408, got $result (tan(1))"
+    exit 1
+}
+
 Write-Host "Phase 2 - Algebraic expression tests passed."
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
