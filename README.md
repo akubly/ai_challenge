@@ -23,15 +23,14 @@
 
 Build a command-line calculator that can:
 - Phase 1: Perform basic arithmetic (add, subtract, multiply, divide)
-- Phase 2: Evaluate algebraic expressions (parentheses, order of operations)
-- Phase 3: Support calculus (derivatives, integrals)
-- Phase 4: Graph expressions (output data points or ASCII plot for a given range)
+- Phase 2: Evaluate algebraic expressions (ln, sin, etc.)
+- Phase 3: Graph expressions (output data points or ASCII plot for a given range)
+- Phase 3: Simplify algebraic expressions
 - Phase 5: AI-powered explanations (output a step-by-step explanation for the calculation)
 
 You may use any programming language.
 
 ## Interface Specification
-
 
 Your calculator must be executable from the command line as follows:
 
@@ -46,7 +45,9 @@ calculator "<expression>"
 
 To support both human-friendly explanations and ease of debugging, your calculator may output **any intermediate steps or explanations** as desired, but the **final result must always be printed on a line by itself, prefixed with `RESULT:`** (with a single space after the colon).
 
-This allows tests and tools to reliably extract the actual result, while users can see the full calculation process.
+The tests and tools will only consider the value after `RESULT:` as the answer. All results should be output with up to 6 decimal places (rounded, not truncated).
+
+This allows the test scripts to reliably extract the actual result, while users (and YOU) can see the full calculation process.
 
 **Example:**
 ```
@@ -60,15 +61,7 @@ Step 3: 2 + 9 = 11
 RESULT: 11
 ```
 
-The tests and tools will only consider the value after `RESULT:` as the answer. All results must still be output with exactly 6 decimal places (rounded, not truncated).
-
-**Minimal output is also valid:**
-```
-RESULT: 11
-```
-
 ## Acceptance Tests
-
 
 Acceptance tests are provided as shell scripts in the `tests/` folder.
 Each script will:
@@ -77,7 +70,7 @@ Each script will:
 - If all tests pass, the script will reveal a secret phrase for that phase.
 
 The challenge is designed so that only a working calculator implementation can reveal the phrase.
-**However, if you're feeling adventurous, you might use AI to help you extract the secret phrase by reverse engineering the test collateral...**
+**However, if you're feeling adventurous, you might use AI to help you extract the secret phrases by reverse engineering the test collateral...**
 
 ## Tools
 
@@ -94,7 +87,7 @@ The challenge is designed so that only a working calculator implementation can r
 ## Feedback
 We value your input! If you encounter situations where the AI tooling excels or falls short—whether it’s generating code, interpreting requirements, or assisting with the challenge—please let us know. Your feedback will help to improve the experience for everyone.
 
-Share your feedback in the meeting chat, or email your comments to **mailto://akubly@microsoft.com** with the subject "Math Quest: AI Tooling Feedback".
+Share your feedback in the meeting chat, or email your comments to **akubly@microsoft.com** with the subject "Math Quest: AI Tooling Feedback".
 Let us know what worked well, what didn’t, and any suggestions for future improvements. Thank you for helping us make this challenge better!
 
 **If you get stuck, please ask for assistance!**
@@ -108,7 +101,7 @@ To complete the challenge, you need to:
 3. Collect the secret phrase revealed for each phase.
 
 # Badge Submission Instructions
-To claim your completion reward, send an email to **mailto://akubly@microsoft.com** with the secret phrase(s) you were able to collect from the test scripts.
+To claim your completion reward, send an email to **akubly@microsoft.com** with the secret phrase(s) you were able to collect from the test scripts.
 
 - You may submit as many phrases as you were able to reveal.
 - Each phrase corresponds to a completed phase of the challenge.
@@ -118,6 +111,8 @@ Once your submission is verified, you will receive your badge.
 ## Phases
 
 ### Phase 1: Basic Arithmetic
+
+<details>
 
 Your calculator should support:
 - Addition, subtraction, multiplication, and division, with correct operator precedence.
@@ -134,9 +129,13 @@ Calculator Output Precision Requirement:
 - All results must be output to at most 6 decimal places (rounded, not truncated), and must appear after `RESULT:`.
   Example: 2.7182818... => `RESULT: 2.718282`
 
+</details>
+
 ---
 
 ### Phase 2: Algebraic & Transcendental Functions
+
+<details>
 
 Your calculator should support:
 - Parentheses and exponentiation (`^`)
@@ -152,10 +151,13 @@ Your calculator should support:
   RESULT: 4.718282
   ```
 
+</details>
+
 ---
 
-
 ### Phase 3: Graphing
+
+<details>
 
 Your calculator should support:
 - Outputting a table of (x, y) pairs for a given expression and range, suitable for graphing
@@ -174,9 +176,13 @@ Your calculator should support:
   2,1
   ```
 
+</details>
+
 ---
 
 ### Phase 4: Algebraic Simplification
+
+<details>
 
 Your calculator should support:
 - Full algebraic simplification of expressions, including:
@@ -193,9 +199,13 @@ Your calculator should support:
   RESULT: x + 1
   ```
 
+</details>
+
 ---
 
 ### Phase 5: AI-generated Explanation
+
+<details>
 
 Your calculator should support:
 - Outputting a step-by-step explanation of the calculation or simplification process, in addition to the final result
@@ -209,10 +219,9 @@ Your calculator should support:
   RESULT: x^2 + 2*x + 1
   ```
 
-# Vibe Coding: Beyond the Challenge
+</details>
 
-<details>
-<summary>Click to expand for inspiration and extra features!</summary>
+# Vibe Coding: Beyond the Challenge
 
 Congratulations on making it this far! As you wrap up your Math Quest, take a moment to reflect on the creative energy and curiosity that may have inspired you to keep building, tweaking, and exploring new features. This is the essence of **vibe coding**—letting your imagination and enthusiasm guide you beyond the requirements, just for the joy of making something even cooler.
 
@@ -231,5 +240,3 @@ If you find yourself thinking, “What if I added just one more feature?”—em
 - **Localization:** Support multiple languages or regional number formats.
 
 Remember, the best projects are the ones you enjoy working on. Whether you stop here or keep going, take pride in what you’ve built—and keep that vibe coding spirit alive!
-
-</details>
