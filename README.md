@@ -190,7 +190,7 @@ Your calculator should support:
   RESULT: x^2 + 2*x + 1
   ```
 
-## Vibe Coding: Beyond the Challenge
+# Vibe Coding: Beyond the Challenge
 
 Congratulations on making it this far! As you wrap up your Math Quest, take a moment to reflect on the creative energy and curiosity that may have inspired you to keep building, tweaking, and exploring new features. This is the essence of **vibe coding**—letting your imagination and enthusiasm guide you beyond the requirements, just for the joy of making something even cooler.
 
