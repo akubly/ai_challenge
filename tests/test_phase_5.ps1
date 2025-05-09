@@ -49,7 +49,7 @@ if ($result -ne $expectedResult) {
 
 Write-Host "Phase 5 - Explanation tests passed."
 if ($LASTEXITCODE -eq 0) {
-    Write-Host "Phase 5 completed: \"$secret\""
+    Write-Host "Phase 5 completed: ""$secret"""
 } else {
     Write-Host "Phase 5 failed."
     exit 1

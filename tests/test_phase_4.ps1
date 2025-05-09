@@ -89,7 +89,7 @@ $calcPath = (Resolve-Path $calc).Path
 $secret = & $getSecretPath 4 $calcPath | Out-String
 $secret = $secret -replace "\r|\n", ""
 if ($LASTEXITCODE -eq 0) {
-    Write-Host "Phase 4 completed: \"$secret\""
+    Write-Host "Phase 4 completed: ""$secret"""
 } else {
     Write-Host "Phase 4 failed."
     exit 1
