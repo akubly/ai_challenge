@@ -1,3 +1,22 @@
+## Table of Contents
+
+- [Overview](#overview)
+- [Interface Specification](#interface-specification)
+- [Output Format (Show Your Work)](#output-format-show-your-work)
+- [Acceptance Tests](#acceptance-tests)
+- [Tools](#tools)
+- [Getting Started](#getting-started)
+- [Feedback](#feedback)
+- [Completion](#completion)
+- [Badge Submission Instructions](#badge-submission-instructions)
+- [Phases](#phases)
+  - [Phase 1: Basic Arithmetic](#phase-1-basic-arithmetic)
+  - [Phase 2: Algebraic & Transcendental Functions](#phase-2-algebraic--transcendental-functions)
+  - [Phase 3: Graphing](#phase-3-graphing)
+  - [Phase 4: Algebraic Simplification](#phase-4-algebraic-simplification)
+  - [Phase 5: AI-generated Explanation](#phase-5-ai-generated-explanation)
+- [Vibe Coding: Beyond the Challenge](#vibe-coding-beyond-the-challenge)
+
 # Math Quest: AI-Powered Calculator
 
 ## Overview
@@ -192,6 +211,9 @@ Your calculator should support:
 
 # Vibe Coding: Beyond the Challenge
 
+<details>
+<summary>Click to expand for inspiration and extra features!</summary>
+
 Congratulations on making it this far! As you wrap up your Math Quest, take a moment to reflect on the creative energy and curiosity that may have inspired you to keep building, tweaking, and exploring new features. This is the essence of **vibe coding**—letting your imagination and enthusiasm guide you beyond the requirements, just for the joy of making something even cooler.
 
 If you find yourself thinking, “What if I added just one more feature?”—embrace it! Here are some ideas for where you could take your calculator next:
@@ -209,3 +231,5 @@ If you find yourself thinking, “What if I added just one more feature?”—em
 - **Localization:** Support multiple languages or regional number formats.
 
 Remember, the best projects are the ones you enjoy working on. Whether you stop here or keep going, take pride in what you’ve built—and keep that vibe coding spirit alive!
+
+</details>
