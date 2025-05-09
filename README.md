@@ -70,6 +70,7 @@ The challenge is designed so that only a working calculator implementation can r
 2. Implement your calculator in the language of your choice.
 3. Make sure your calculator can handle all required math expressions for a given phase.
 4. Run the test scripts in the `tests/` folder, passing the path to your calculator as the first argument.
+5. Good luck and HAVE FUN!
 
 ## Feedback
 We value your input! If you encounter situations where the AI tooling excels or falls short—whether it’s generating code, interpreting requirements, or assisting with the challenge—please let us know. Your feedback will help to improve the experience for everyone.
@@ -189,4 +190,22 @@ Your calculator should support:
   RESULT: x^2 + 2*x + 1
   ```
 
-## Good luck!
+## Vibe Coding: Beyond the Challenge
+
+Congratulations on making it this far! As you wrap up your Math Quest, take a moment to reflect on the creative energy and curiosity that may have inspired you to keep building, tweaking, and exploring new features. This is the essence of **vibe coding**—letting your imagination and enthusiasm guide you beyond the requirements, just for the joy of making something even cooler.
+
+If you find yourself thinking, “What if I added just one more feature?”—embrace it! Here are some ideas for where you could take your calculator next:
+
+- **Imaginary & Complex Numbers:** Add support for calculations with imaginary and complex numbers (e.g., `i`, `a + bi`).
+- **Linear Algebra:** Support for vectors, matrices, and operations like dot product, cross product, and matrix inversion.
+- **Equation Solving:** Implement solvers for linear, quadratic, or even general equations.
+- **Configurable Precision & Formatting:** Let users choose the number of decimal places, output format, or even switch between scientific and standard notation.
+- **Friendly User Experience:** Add color, prompts, or even a simple GUI for easier interaction.
+- **Plotting Enhancements:** Add support for 3D plots, multiple curves, or interactive graphing.
+- **Curve Fitting & Regression:** Fit polynomials or other functions to data points, and output best-fit parameters.
+- **Symbolic Computation:** Expand to handle symbolic integration, differentiation, or simplification.
+- **Unit Conversion:** Allow calculations with units (e.g., degrees, meters, seconds) and automatic conversion.
+- **History & Undo:** Keep a history of calculations and allow users to undo or revisit previous steps.
+- **Localization:** Support multiple languages or regional number formats.
+
+Remember, the best projects are the ones you enjoy working on. Whether you stop here or keep going, take pride in what you’ve built—and keep that vibe coding spirit alive!
